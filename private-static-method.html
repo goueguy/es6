@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACCESS PRIVATE PROPERTY & METHODS</title>
+  </head>
+  <body>
+      <script>
+          class user{
+              name="DATA";
+              phone="2250709162396";
+              constructor(name,phone){
+                this.name=name;
+                this.phone=phone;
+              }
+              details(){
+                  return "MY NAME IS "+this.name+"";
+              }
+          }
+          const obj = new user("GOUEGUY");
+          console.log(obj.phone);
+          console.log(obj.details());
+      </script>
+  </body>
+</html>
