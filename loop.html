@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOOP</title>
+  </head>
+  <body>
+    <ul id="list"></ul>
+    <script>
+      const companies = [
+        "NSIA BANQUE",
+        "NSIA ASSURANCES",
+        "NSIA FINANCE",
+        "NSIA ASSET MANAGEMENT",
+        "NSIA VIE ASSURANCES",
+      ];
+    //   const list = document.querySelector("#list");
+    //   let html = "";
+    //   for (let x = 0; x < companies.length; x++) {
+    //     list.innerHTML += `<li>${companies[x]}</li>`;
+    //   }
+    //   for (let key in companies) {
+    //     console.log(companies[key]);
+    //   }
+      let user = {
+        name: "elon",
+        email: "jlagoueguy@gmail.com",
+        age: 30,
+      };
+    //   console.log(user["age"]);
+    //   for (let y in user) {
+    //     console.log(user[y]);
+    //   }
+      for(let i=0; i<Object.keys(user).length;i++){
+        console.log(user[Object.keys(user)[i]]);
+      }
+    </script>
+  </body>
+</html>

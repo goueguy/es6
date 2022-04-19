@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONSTRUCTOR</title>
+  </head>
+  <body>
+    <script>
+      class Animal{
+        food = "NON VEG";
+        constructor(){
+          console.log("HELLO FROM constructor");
+        }
+        details(){
+          return "FOODING IS "+this.food;
+        }
+      }
+      const obj = new Animal;
+      console.log(obj.details());
+    </script>
+  </body>
+</html>

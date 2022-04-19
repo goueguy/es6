@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT DESTRUCTURING</title>
+</head>
+<body>
+    <script>
+        let user = {
+            'name':'Goueguy',
+            'email':'jlagoueguy@gmail.com',
+            'password':'P@ssNsi2022',
+            'phone':'0709162396',
+            'year':2022,
+            'fruit':{
+                'fruit1':'apple',
+                'fruit2':'banana',
+                'fruit3':'mongo'
+            }
+        }
+        let {name,email,password,phone:mobile,year,fruit:{fruit1:one,fruit2:two,fruit3:three}} = user;
+        console.log(name,email,password,mobile,year,one,two,three);
+    </script>
+</body>
+</html>
