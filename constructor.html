@@ -9,15 +9,17 @@
   <body>
     <script>
       class Animal{
-        food = "NON VEG";
-        constructor(){
-          console.log("HELLO FROM constructor");
+        name = "NON VEG";
+        food = "TIGER";
+        constructor(name,food){
+          this.name=name;
+          this.food=food;
         }
         details(){
-          return "FOODING IS "+this.food;
+          return "ANIMAL NAME IS "+this.name+" IT IS EATING "+this.food;
         }
       }
-      const obj = new Animal;
+      const obj = new Animal("LION","OTHERS ANIMALS");
       console.log(obj.details());
     </script>
   </body>
