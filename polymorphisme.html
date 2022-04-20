@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLYMORPHISME</title>
+</head>
+<body>
+    <script>
+          class Person{
+            constructor(name){
+                  this.name=name;
+                  console.log("THIS IS FROM PERSONAL CLASS");
+              }
+              getName(){
+                  return "NAME IS "+this.name;
+              }
+          }
+          class Student extends Person{
+              constructor(name){
+                  super();
+                  this.name=name;
+                   console.log("THIS IS FROM STUDENT CLASS");
+              }
+              age(age){
+                  return "AGE IS "+age;
+              }
+              getName(){
+                  console.log(super.getName());
+                  return "STUDENT NAME IS "+this.name;
+              }
+          }
+          class Teacher extends Person{
+              experience(experience){
+                  return experience + " YEARS OF EXPERIENCE";
+              }
+              
+          }
+          const objS = new Student("john");
+          console.log(objS.getName());
+          console.log(objS.age(25));
+          const objT= new Teacher("Max");
+          console.log(objT.getName());
+          console.log(objT.experience(40));
+      </script>
+</body>
+</html>

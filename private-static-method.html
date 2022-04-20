@@ -10,18 +10,28 @@
       <script>
           class user{
               name="DATA";
-              phone="2250709162396";
+              #phone="2250709162396";
               constructor(name,phone){
                 this.name=name;
                 this.phone=phone;
               }
               details(){
-                  return "MY NAME IS "+this.name+"";
+                  return "MY NAME IS "+this.name+" "+this.phone;
               }
+              //getteur
+              get getPhone(){
+                return this.#phone;
+              }
+              //setteur
+              set setPhone(phone){
+                this.#phone=phone;
+              }
+             
           }
-          const obj = new user("GOUEGUY");
-          console.log(obj.phone);
-          console.log(obj.details());
+          const obj = new user("GOUEGUY","0709162396");
+          
+          obj.setPhone = "01012396";
+          console.log(obj.getPhone);
       </script>
   </body>
 </html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Static Property & Static Method in ECMA script | OOPS Concept</title>
+  </head>
+  <body>
+      <script>
+          class user{
+              static num=0;
+              constructor(){
+                  console.log('HI FROM CONSTRUCTOR...');
+              }
+              static getValue(){
+                  this.num++;
+                  console.log(this.num);
+              }
+          }
+          //const jean = new user();
+          user.getValue();
+          user.getValue();
+          user.getValue();
+
+          //const robert = new user();
+          user.getValue();
+          user.getValue();
+          user.getValue();
+      </script>
+  </body>
+</html>
